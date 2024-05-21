@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 export async function connect() {
     try {
-        await mongoose.connect(process.env.MONGO_URL || 'mongodb://localhost:27017/test');
+        await mongoose.connect(process.env.MONGO_URL || 8000);
 
         const connection = mongoose.connection;
 
