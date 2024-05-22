@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-
 const LoginPage = () => {
     const [user, setUser] = useState({
         email: "",
@@ -12,8 +11,6 @@ const LoginPage = () => {
     })
     console.log(user);
     const onLogin = async () => {
-
-
     }
 
     return (
@@ -38,9 +35,7 @@ const LoginPage = () => {
             <Link
                 className="mt-3 font-bold w-[200px] h-[30px] text-center"
                 href='/profile'>NEXT PAGE ➡️ </Link>
-
         </div>
-
     )
 }
 

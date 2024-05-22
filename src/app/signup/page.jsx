@@ -9,7 +9,6 @@ const SignUp = () => {
         password: "",
         username: ""
     })
-  
     const onsignUp = async () => {
     }
     return (
@@ -21,7 +20,7 @@ const SignUp = () => {
                 value={user.username}
                 onChange={(e) => setUser({ ...user, username: e.target.value })}
                 type="text" placeholder="username..." />
-                <label>EMAIL</label>
+            <label>EMAIL</label>
             <input
                 id="email"
                 value={user.email}
@@ -33,7 +32,7 @@ const SignUp = () => {
                 value={user.password}
                 onChange={(e) => setUser({ ...user, password: e.target.value })}
                 type="password" placeholder="password..." />
-             <button
+            <button
                 onClick={onsignUp}
                 className=" rounded-md mt-3  border border-white border-1 w-[100px] h-[30px]"> Sign Up</button>
             <Link
